@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HAISODA Group</title>
+  <style>
+    /* Reset & global */
+    * { margin:0; padding:0; box-sizing:border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    body { line-height:1.6; background-color:#f8f9fa; color:#333; }
+    a { text-decoration:none; color: inherit; }
+
+    /* Header */
+    header { background:#0a3d62; color:#fff; padding:30px 20px; text-align:center; }
+    header h1 { font-size:3em; margin-bottom:10px; }
+    header p { font-size:1.2em; opacity:0.85; }
+
+    /* Navbar (optional if needed) */
+    nav { margin-top:15px; }
+    nav a { color:#fff; margin:0 15px; font-weight:600; transition:0.3s; }
+    nav a:hover { color:#f1c40f; }
+
+    /* Hero Section */
+    .hero { background:linear-gradient(rgba(10,61,98,0.8), rgba(10,61,98,0.8)), url('https://via.placeholder.com/1600x600.png?text=HAISODA+Group') center/cover no-repeat; color:#fff; text-align:center; padding:100px 20px; }
+    .hero h2 { font-size:2.5em; margin-bottom:20px; }
+    .hero p { font-size:1.2em; max-width:700px; margin:0 auto 30px; }
+    .hero a { background:#f1c40f; color:#0a3d62; padding:15px 40px; border-radius:8px; font-weight:bold; transition:0.3s; }
+    .hero a:hover { background:#e0b90f; }
+
+    /* Value Proposition Section */
+    .values { display:flex; flex-wrap:wrap; justify-content:center; gap:40px; padding:80px 20px; background:#fff; text-align:center; }
+    .value-card { width:280px; padding:30px; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.08); transition:0.3s; }
+    .value-card:hover { transform:translateY(-5px); box-shadow:0 8px 25px rgba(0,0,0,0.12); }
+    .value-card h3 { color:#0a3d62; margin-bottom:15px; font-size:1.3em; }
+    .value-card p { font-size:0.95em; opacity:0.85; }
+
+    /* CTA Section */
+    .cta { background:#3c6382; color:#fff; padding:80px 20px; text-align:center; }
+    .cta h2 { font-size:2em; margin-bottom:20px; }
+    .cta a { background:#f1c40f; color:#0a3d62; padding:15px 40px; border-radius:8px; font-weight:bold; transition:0.3s; }
+    .cta a:hover { background:#e0b90f; }
+
+    /* Testimonial Section */
+    .testimonials { padding:80px 20px; text-align:center; background:#f1f1f1; }
+    .testimonials h2 { color:#0a3d62; margin-bottom:50px; font-size:2em; }
+    .testimonial-card { max-width:600px; margin:20px auto; background:#fff; padding:30px; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.08); }
+    .testimonial-card p { font-style:italic; margin-bottom:15px; }
+    .testimonial-card h4 { color:#0a3d62; font-weight:600; }
+
+    /* Footer */
+    footer { background:#0a3d62; color:#fff; text-align:center; padding:30px 20px; }
+    footer p { font-size:0.9em; opacity:0.85; }
+
+    /* Responsive */
+    @media(max-width:768px){
+      .values { flex-direction:column; align-items:center; }
+      .value-card { width:90%; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>HAISODA Group</h1>
+    <p>Menghubungkan Industri, Menciptakan Masa Depan</p>
+    <nav>
+      <a href="#values">Nilai Kami</a>
+      <a href="#cta">Hubungi Kami</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Selamat Datang di HAISODA Group</h2>
+    <p>Kami adalah holding company yang mengelola berbagai bisnis dengan fokus pada kualitas, inovasi, dan pertumbuhan berkelanjutan.</p>
+    <a href="#values">Pelajari Lebih Lanjut</a>
+  </section>
+
+  <!-- Value Proposition -->
+  <section id="values" class="values">
+    <div class="value-card">
+      <h3>Inovasi</h3>
+      <p>Kami mendorong ide-ide baru untuk menghadirkan solusi kreatif dan berkelanjutan di berbagai industri.</p>
+    </div>
+    <div class="value-card">
+      <h3>Kualitas</h3>
+      <p>Komitmen terhadap kualitas adalah inti dari setiap bisnis yang kami kelola, memberikan kepercayaan bagi pelanggan dan mitra.</p>
+    </div>
+    <div class="value-card">
+      <h3>Integritas</h3>
+      <p>Kami menjalankan bisnis dengan prinsip etika tinggi, transparansi, dan tanggung jawab sosial.</p>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="cta" class="cta">
+    <h2>Bergabung atau Berkolaborasi Bersama Kami</h2>
+    <a href="mailto:contact@haisoda.com">Hubungi Kami</a>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section class="testimonials">
+    <h2>Apa Kata Mereka</h2>
+    <div class="testimonial-card">
+      <p>"HAISODA Group memberikan inspirasi dan kepemimpinan yang jelas dalam setiap kolaborasi. Profesional dan visioner."</p>
+      <h4>- Partner Bisnis</h4>
+    </div>
+    <div class="testimonial-card">
+      <p>"Kualitas dan integritas HAISODA membuat kami percaya untuk bekerja sama dalam berbagai proyek."</p>
+      <h4>- Klien</h4>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 HAISODA Group. Semua hak dilindungi.</p>
+  </footer>
+
+</body>
+</html>
