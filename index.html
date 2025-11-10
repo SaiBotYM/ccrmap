@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CoinSaya - Roadmap & Edukasi Crypto</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    background: #f5f5f5;
+    line-height: 1.5;
+  }
+  h1, h2, h3 {
+    text-align: center;
+    color: #2c3e50;
+    margin: 10px 0;
+  }
+  h3 { margin-top: 20px; }
+
+  /* Diagram Alur */
+  .diagram {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+  }
+  .box {
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    min-width: 120px;
+    flex: 1 1 120px;
+    text-align: center;
+    background: #fff;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  .box:hover { transform: scale(1.05); }
+  .arrow {
+    width: 40px;
+    height: 2px;
+    background: #3498db;
+    position: relative;
+    top: 20px;
+    margin: 5px;
+    flex: 0 0 auto;
+  }
+  .arrow::after {
+    content: '';
+    border: 5px solid transparent;
+    border-left-color: #3498db;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+  }
+
+  /* Roadmap Fase */
+  .roadmap { display: flex; flex-direction: column; align-items: center; margin: 10px 0; }
+  .phase {
+    background: #fff;
+    border-left: 5px solid #3498db;
+    padding: 15px 20px;
+    margin: 10px;
+    width: 95%;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    position: relative;
+  }
+  .phase h3 { margin-top: 0; font-size: 1.1em; }
+  .phase ul { padding-left: 20px; font-size: 0.95em; }
+  .note {
+    background: #ffeaa7;
+    padding: 4px 8px;
+    display: inline-block;
+    margin-top: 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.9em;
+  }
+
+  /* Section Edukasi */
+  .section {
+    background: #fff;
+    padding: 15px 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  }
+  table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+  table, th, td { border: 1px solid #3498db; }
+  th, td { padding: 8px; text-align: center; }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    .diagram { flex-direction: column; align-items: center; }
+    .arrow { width: 2px; height: 30px; top: 0; }
+    .arrow::after {
+      border-left-color: transparent;
+      border-top-color: #3498db;
+      border: 5px solid transparent;
+      border-bottom: none;
+      top: -10px;
+      left: -5px;
+      transform: rotate(90deg);
+    }
+  }
+</style>
+</head>
+<body>
+
+<h1>CoinSaya</h1>
+<h2>Alur Sistem, Roadmap, dan Edukasi Crypto</h2>
+
+<!-- Diagram Alur -->
+<div class="diagram">
+  <div class="box">User</div>
+  <div class="arrow"></div>
+  <div class="box">Frontend</div>
+  <div class="arrow"></div>
+  <div class="box">Backend</div>
+  <div class="arrow"></div>
+  <div class="box">Blockchain</div>
+</div>
+
+<!-- Roadmap Fase -->
+<div class="roadmap">
+  <div class="phase">
+    <h3>Fase 1: Perencanaan & Desain</h3>
+    <ul>
+      <li>Analisis requirement & spesifikasi fitur CoinSaya</li>
+      <li>Skema database & arsitektur blockchain</li>
+      <li>UI/UX mockup halaman dashboard dan exchange</li>
+      <li>Pemilihan stack teknologi</li>
+    </ul>
+    <div class="note">MENUNGGU IKUNG NGODING</div>
+  </div>
+
+  <div class="phase">
+    <h3>Fase 2: Backend & Blockchain</h3>
+    <ul>
+      <li>Setup database transaksi & wallet system</li>
+      <li>Membuat API transaksi internal</li>
+      <li>Integrasi blockchain (private chain / smart contract)</li>
+      <li>Implementasi keamanan: 2FA, OTP, enkripsi</li>
+    </ul>
+    <div class="note">MENUNGGU IKUNG NGODING</div>
+  </div>
+
+  <div class="phase">
+    <h3>Fase 3: Frontend & Dashboard</h3>
+    <ul>
+      <li>Dashboard live koin & transaksi</li>
+      <li>Chart transaksi & saldo user</li>
+      <li>Halaman informasi CoinSaya & panduan</li>
+      <li>Responsive UI untuk mobile</li>
+    </ul>
+    <div class="note">MENUNGGU IKUNG NGODING</div>
+  </div>
+
+  <div class="phase">
+    <h3>Fase 4: Exchange Real Money ↔ CoinSaya</h3>
+    <ul>
+      <li>Integrasi payment gateway</li>
+      <li>Log transaksi & validasi pembayaran</li>
+      <li>Testing keamanan transaksi</li>
+    </ul>
+    <div class="note">MENUNGGU IKUNG NGODING</div>
+  </div>
+
+  <div class="phase">
+    <h3>Fase 5: Transaksi Offline & Tambahan</h3>
+    <ul>
+      <li>Export/import transaksi via flashdisk</li>
+      <li>Validasi signature digital</li>
+      <li>Backup & restore data wallet</li>
+    </ul>
+    <div class="note">MENUNGGU IKUNG NGODING</div>
+  </div>
+
+  <div class="phase">
+    <h3>Fase 6: Testing & Launch</h3>
+    <ul>
+      <li>Unit & integration testing</li>
+      <li>Load & stress testing</li>
+      <li>Audit keamanan blockchain & API</li>
+      <li>Deploy & Launch website</li>
+    </ul>
+    <div class="note">MENUNGGU IKUNG NGODING</div>
+  </div>
+
+  <div class="phase">
+    <h3>Fase 7: Maintenance & Upgrade</h3>
+    <ul>
+      <li>Bug fixing & update security berkala</li>
+      <li>Upgrade fitur exchange, wallet, dashboard</li>
+      <li>Analytics & reporting untuk pengembangan</li>
+    </ul>
+    <div class="note">MENUNGGU IKUNG NGODING</div>
+  </div>
+</div>
+
+<!-- Edukasi Crypto -->
+<div class="section">
+  <h2>Apa Itu Coin Crypto?</h2>
+  <p>Cryptocurrency adalah mata uang digital yang aman, transparan, dan terdesentralisasi menggunakan teknologi blockchain. Transaksi dapat dilakukan tanpa pihak ketiga, seperti bank, dan dapat digunakan sebagai aset atau alat pembayaran digital.</p>
+  <ul>
+    <li><b>Desentralisasi:</b> Tidak dikontrol satu entitas.</li>
+    <li><b>Transparan:</b> Semua transaksi tercatat di blockchain.</li>
+    <li><b>Aman:</b> Dilindungi kriptografi.</li>
+    <li><b>Digital & Global:</b> Bisa dikirim ke seluruh dunia dengan cepat.</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>Faktor yang Mempengaruhi Nilai Crypto</h2>
+  <ul>
+    <li><b>Terhadap fiat (mata uang nyata):</b> permintaan, supply, regulasi, adopsi, sentimen pasar.</li>
+    <li><b>Terhadap emas:</b> likuiditas, safe haven, inflasi.</li>
+    <li><b>Terhadap crypto lain:</b> dominasi pasar, teknologi, spekulasi, likuiditas.</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>Hukum Cryptocurrency dalam Islam</h2>
+  <p>Dalam perspektif syariah, crypto boleh digunakan dan dimiliki jika:</p>
+  <ul>
+    <li>Tidak mengandung riba.</li>
+    <li>Transaksi jelas, transparan, dan tidak menipu.</li>
+    <li>Tidak digunakan untuk spekulasi berlebihan atau judi.</li>
+    <li>Digunakan untuk hal halal (tidak untuk aktivitas haram).</li>
+  </ul>
+  <p>Contoh ringkas:</p>
+  <table>
+    <tr>
+      <th>Aspek</th>
+      <th>Hukum Syariah</th>
+    </tr>
+    <tr>
+      <td>Alat tukar</td>
+      <td>Sah jika jelas & halal</td>
+    </tr>
+    <tr>
+      <td>Investasi / trading</td>
+      <td>Halal jika tidak spekulatif berlebihan</td>
+    </tr>
+    <tr>
+      <td>Penggunaan haram</td>
+      <td>Haram</td>
+    </tr>
+    <tr>
+      <td>Riba</td>
+      <td>Haram</td>
+    </tr>
+    <tr>
+      <td>Transparansi transaksi</td>
+      <td>Harus jelas</td>
+    </tr>
+  </table>
+</div>
+
+<script>
+  // Interaksi diagram
+  const boxes = document.querySelectorAll('.box');
+  boxes.forEach(box => {
+    box.addEventListener('click', () => {
+      alert('Info lebih lanjut: ' + box.innerText);
+    });
+  });
+</script>
+
+</body>
+</html>
